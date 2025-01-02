@@ -1,0 +1,72 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 500px;
+    max-width: 1200px;  
+    max-height: 1200px;
+    margin: 0 auto; 
+}
+
+.carousel-slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: -100px;
+    height: 500px; /* Set the height for the carousel */
+}
+
+.carousel-image {
+    width: 100%; /* Ensure the image takes full width */
+    height: 100%; /* Ensure the image takes full height */
+    display: block;
+    object-fit: cover; /* Ensure images fill the container without distortion */
+    object-position: center; /* Optional: Centers the image within the container */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensures the buttons are visible above the images */
+}
+
+.carousel-control {
+    background-color: transparent; /* Semi-transparent background for the buttons */
+    color: transparent;
+    border: none;
+    padding: 15px; /* Button size */
+    cursor: pointer;
+    font-size: 30px; /* Icon size */
+    border-radius: 50%; /* Circular buttons */
+    transition: background-color 0.3s ease;
+    z-index: 15; /* Ensure buttons stay on top of the image */
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    z-index: 15; /* Ensure dots appear on top */
+}
+
+.dot {
+    height: 15px; /* Dot size */
+    width: 15px;
+    margin: 0 7px; /* Space between dots */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+ 
+
+ 
